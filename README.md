@@ -33,16 +33,53 @@ This implementation demonstrates the transition from **theoretical modern contro
 
 ## 🧩 Repository Structure
 
+```bash
 modern_project/
-├─ MATLAB-code/
-│ ├─ control-modern-project.m # Main script: nonlinear, linear, and control design
-│ ├─ quadruple-tank-script.m # Nonlinear & linearized model simulation
+├─ MATLAB code/
+│  ├─ control-modern-project.m        # Main script: nonlinear, linear, and control design
+│  ├─ quadruple-tank-script.m         # Nonlinear & linearized model simulation
 │
 ├─ simulink/
-│ ├─ quadruple-tank-model.slx # Nonlinear system model
-│ ├─ sym-project.slx # Linearized or symbolic-based control model
+│  ├─ quadruple-tank-model.slx        # Nonlinear system model
+│  ├─ sym-project.slx                 # Linearized or symbolic-based control model
 │
 ├─ report/
-│ └─ modern-control-project-report.pdf
-└─paper/
-    └─
+│  └─ modern-control-project-report.pdf
+│
+└─ paper/                             # related reference materials
+     └─
+```
+## 💻 MATLAB Codes
+| File | Description |
+|------|--------------|
+| [control-modern-project.m](MATLAB%20code/control-modern-project.m) | Implements controller design and analysis for the Quadruple Tank Process |
+| [quadruple-tank-script.m](MATLAB%20code/quadruple-tank-script.m) | Contains nonlinear and linearized system modeling, simulation, and analysis |
+
+---
+
+## ⚙️ Simulink Models
+| Model | Description |
+|--------|--------------|
+| [quadruple-tank-model.slx](simulink/quadruple-tank-model.slx) | Nonlinear Quadruple Tank simulation |
+| [sym-project.slx](simulink/sym-project.slx) | Linearized model with controller/observer integration |
+
+---
+
+## 🧾 Report
+Full documentation of the project, including derivations, figures, results, and detailed analysis:  
+📄 [modern-control-project-report.pdf](report/modern-control-project-report.pdf)
+
+---
+
+## 📊 Key Results and Analysis
+Based on simulations and report findings:
+
+- **Model Validation:** Nonlinear and linear models show close behavior (<2% error) in MATLAB and Simulink.  
+- **Stability:** All eigenvalues of the A-matrix have negative real parts → system is asymptotically stable.  
+- **Controllability & Observability:** Both confirmed using rank and PBH tests.  
+- **Control Design:**  
+  - State feedback effectively improves speed of response.  
+  - Static and integral controllers eliminate steady-state error.  
+  - Luenberger observer accurately estimates states with minimal error norm.  
+  - Observer-based control matches full-state feedback behavior.
+
