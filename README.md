@@ -52,22 +52,23 @@ modern-project/
 ## 💻 MATLAB Codes
 | File | Description |
 |------|--------------|
-| [control-modern-project.m](MATLAB%20code/control-modern-project.m) | Implements controller design and analysis for the Quadruple Tank Process |
-| [quadruple-tank-script.m](MATLAB%20code/quadruple-tank-script.m) | Contains nonlinear and linearized system modeling, simulation, and analysis |
+| [control-modern-project.m](modern-project/MATLAB-code/control-modrn-project.m) | Implements controller design and analysis for the Quadruple Tank Process |
+| [quadruple-tank-script.m](modern-project/MATLAB-code/quadruple-tank-script.m) | Contains nonlinear and linearized system modeling, simulation, and analysis |
 
 ---
 
 ## ⚙️ Simulink Models
 | Model | Description |
 |--------|--------------|
-| [quadruple-tank-model.slx](simulink/quadruple-tank-model.slx) | Nonlinear Quadruple Tank simulation |
-| [sym-project.slx](simulink/sym-project.slx) | Linearized model with controller/observer integration |
+| [quadruple-tank-model.slx](modern-project/simulink/quadruple-tank-model.slx) | Nonlinear Quadruple Tank simulation |
+| [sym-project.slx](modern-project/simulink/sym-project.slx) | Linearized model with controller/observer integration |
 
 ---
 
 ## 🧾 Report
 Full documentation of the project, including derivations, figures, results, and detailed analysis:  
-📄 [modern-control-project-report.pdf](report/modern-control-project-report.pdf)
+📄 [modern-control-project-report.pdf](modern-project/report/modern-control-project-report.pdf
+)
 
 ---
 
