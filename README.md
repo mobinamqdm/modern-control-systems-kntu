@@ -1,6 +1,6 @@
 # Modern Control Project — Quadruple Tank System
 
-This repository contains the main project for the **Modern Control** course at **K. N. Toosi University of Technology**, instructed by **Dr. Bijan Moaveni**.  
+This repository contains the main project I have accomplished for the **Modern Control** course at **K. N. Toosi University of Technology**, instructed by **Dr. Bijan Moaveni**.  
 The project focuses on the **analysis, linearization, and control design** of a nonlinear **Quadruple Tank Process (QTP)** system using **MATLAB** and **Simulink**.
 
 ---
@@ -29,6 +29,18 @@ This implementation demonstrates the transition from **theoretical modern contro
   - Luenberger observer and observer-based controller  
 - Compare results between **MATLAB** and **Simulink**, validating accuracy across both platforms.
 
+---
+## 📊 Key Results and Analysis
+Based on simulations and report findings:
+
+- **Model Validation:** Nonlinear and linear models show close behavior (<2% error) in MATLAB and Simulink.  
+- **Stability:** All eigenvalues of the A-matrix have negative real parts → system is asymptotically stable.  
+- **Controllability & Observability:** Both confirmed using rank and PBH tests.  
+- **Control Design:**  
+  - State feedback effectively improves speed of response.  
+  - Static and integral controllers eliminate steady-state error.  
+  - Luenberger observer accurately estimates states with minimal error norm.  
+  - Observer-based control matches full-state feedback behavior.
 ---
 
 ## 🧩 Repository Structure
@@ -71,16 +83,4 @@ Full documentation of the project, including derivations, figures, results, and 
 )
 
 ---
-
-## 📊 Key Results and Analysis
-Based on simulations and report findings:
-
-- **Model Validation:** Nonlinear and linear models show close behavior (<2% error) in MATLAB and Simulink.  
-- **Stability:** All eigenvalues of the A-matrix have negative real parts → system is asymptotically stable.  
-- **Controllability & Observability:** Both confirmed using rank and PBH tests.  
-- **Control Design:**  
-  - State feedback effectively improves speed of response.  
-  - Static and integral controllers eliminate steady-state error.  
-  - Luenberger observer accurately estimates states with minimal error norm.  
-  - Observer-based control matches full-state feedback behavior.
 
