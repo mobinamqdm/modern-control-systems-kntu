@@ -34,8 +34,8 @@ This implementation demonstrates the transition from **theoretical modern contro
 ## 🧩 Repository Structure
 
 ```bash
-modern_project/
-├─ MATLAB code/
+modern-project/
+├─ MATLAB-code/
 │  ├─ control-modern-project.m        # Main script: nonlinear, linear, and control design
 │  ├─ quadruple-tank-script.m         # Nonlinear & linearized model simulation
 │
@@ -47,7 +47,7 @@ modern_project/
 │  └─ modern-control-project-report.pdf
 │
 └─ paper/                             # related reference materials
-     └─
+     └─state-variable-analysis-of-four-tank-system.pdf
 ```
 ## 💻 MATLAB Codes
 | File | Description |
